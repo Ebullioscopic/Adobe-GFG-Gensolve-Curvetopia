@@ -1,10 +1,10 @@
-# CurveShapeNet
+# CURVETOPIA
 
-**CurveShapeNet** is a versatile toolkit for analyzing 2D shapes, offering features like shape detection, symmetry analysis, curve completion, and shape recognition using deep learning models.
+**CURVETOPIA** is a versatile toolkit for analyzing 2D shapes, offering features like shape detection, symmetry analysis, curve completion, and shape recognition using deep learning models.
 
 ## Overview
 
-CurveShapeNet processes and analyzes 2D shapes represented as polylines. The main functionalities include:
+CURVETOPIA processes and analyzes 2D shapes represented as polylines. The main functionalities include:
 
 - **Shape Regularization:** Identifying and classifying geometric shapes such as circles, ellipses, rectangles, polygons, and stars.
 - **Symmetry Detection:** Detecting reflective and rotational symmetries in shapes.
@@ -14,7 +14,7 @@ CurveShapeNet processes and analyzes 2D shapes represented as polylines. The mai
 ## Directory Structure
 
 ```
-curve_project/
+Adobe-GFG-Gensolve-Curvetopia/
 │
 ├── data/
 │   ├── isolated.csv
@@ -49,8 +49,8 @@ To set up the project environment, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your_username/CurveShapeNet.git
-   cd CurveShapeNet
+   git clone https://github.com/Ebullioscopic/Adobe-GFG-Gensolve-Curvetopia
+   cd Adobe-GFG-Gensolve-Curvetopia
    ```
 
 2. **Install Dependencies:**
@@ -110,4 +110,4 @@ To set up the project environment, follow these steps:
 
 ## Conclusion
 
-**CurveShapeNet** provides a comprehensive toolset for working with 2D shapes, from identifying and regularizing shapes to detecting symmetries, completing curves, and recognizing shapes using deep learning models. It is a solid foundation for research projects, computer vision applications, or any shape analysis tasks.
+**CURVETOPIA** provides a comprehensive toolset for working with 2D shapes, from identifying and regularizing shapes to detecting symmetries, completing curves, and recognizing shapes using deep learning models. It is a solid foundation for research projects, computer vision applications, or any shape analysis tasks.
