@@ -123,10 +123,8 @@ To set up the project environment, follow these steps:
 
 ## Contributors
 
-[<img src="https://github.com/Ebullioscopic.png" width="60px;"/><br /><sub><ahref="https://github.com/Ebullioscopic">Ebullioscopic</a></sub>](https://github.com/Ebullioscopic/Adobe-GFG-Gensolve-Curvetopia)
-
-[<img src="https://github.com/A-Akhil.png" width="60px;"/><br /><sub><ahref="https://github.com/A-Akhil">A-Akhil</a></sub>](https://github.com/Ebullioscopic/Adobe-GFG-Gensolve-Curvetopia)
-
+[<img src="https://github.com/Ebullioscopic.png" style="width: 60px; height: 60px; border-radius: 50%;" alt="Ebullioscopic GitHub"/><br /><sub></sub>](https://github.com/Ebullioscopic/Adobe-GFG-Gensolve-Curvetopia)
 [Hariharan Mudaliar](https://github.com/Ebullioscopic)
 
+[<img src="https://github.com/A-Akhil.png" style="width: 60px; height: 60px; border-radius: 50%;" alt="A-Akhil GitHub"/><br /><sub></sub>](https://github.com/Ebullioscopic/Adobe-GFG-Gensolve-Curvetopia)
 [A Akhil](https://github.com/A-Akhil)
