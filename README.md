@@ -11,6 +11,9 @@ CURVETOPIA processes and analyzes 2D shapes represented as polylines. The main f
 - **Curve Completion:** Completing missing parts of shapes through interpolation.
 - **Shape Recognition:** Training a neural network to recognize and classify shapes from images of their polylines.
 
+## Output
+
+
 ## Directory Structure
 
 ```
@@ -111,3 +114,8 @@ To set up the project environment, follow these steps:
 ## Conclusion
 
 **CURVETOPIA** provides a comprehensive toolset for working with 2D shapes, from identifying and regularizing shapes to detecting symmetries, completing curves, and recognizing shapes using deep learning models. It is a solid foundation for research projects, computer vision applications, or any shape analysis tasks.
+
+## Contributors
+
+[Hariharan Mudaliar](https://github.com/Ebullioscopic)
+[A Akhil](https://github.com/A-Akhil)
