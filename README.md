@@ -112,6 +112,69 @@ To set up the project environment, follow these steps:
 - **Run Example:** 
   - Load new data, run the script, and save prediction results as images.
 
+Here's a condensed version of the code snippets with a sample execution:
+
+---
+
+# **Running on Google Colab: Shape Regularization and Occlusion Handling**
+
+This notebook provides tools for processing, regularizing, and visualizing 2D shapes from CSV files.
+
+### **Code Snippets**
+
+```python
+import numpy as np
+from scipy.spatial import ConvexHull
+import matplotlib.pyplot as plt
+from scipy.interpolate import splprep, splev
+
+def read_csv(csv_path):
+    return [np.genfromtxt(csv_path, delimiter=',')[np.genfromtxt(csv_path, delimiter=',')[:, 0] == i][:, 1:] for i in np.unique(np.genfromtxt(csv_path, delimiter=',')[:, 0])]
+
+def plot(paths_XYs, colours):
+    fig, ax = plt.subplots(figsize=(8, 8))
+    for i, XYs in enumerate(paths_XYs):
+        for XY in XYs:
+            ax.plot(XY[:, 0], XY[:, 1], c=colours[i % len(colours)], linewidth=2)
+    plt.show()
+
+def regularize_circle(points):
+    center = np.mean(points, axis=0)
+    radius = np.median(np.linalg.norm(points - center, axis=1))
+    theta = np.linspace(0, 2 * np.pi, len(points))
+    return np.column_stack((center[0] + radius * np.cos(theta), center[1] + radius * np.sin(theta)))
+
+def regularize_shape(points):
+    return regularize_circle(points) if identify_shape(points) == 'circle' else bezier_curve_fit(points)
+
+def identify_shape(points):
+    hull = ConvexHull(points)
+    compactness = 4 * np.pi * hull.volume / (calculate_perimeter(hull) ** 2)
+    return 'circle' if compactness > 0.88 else 'unknown'
+
+def calculate_perimeter(hull):
+    return sum(np.linalg.norm(hull.points[hull.vertices[i]] - hull.points[hull.vertices[(i + 1) % len(hull.vertices)]]) for i in range(len(hull.vertices)))
+
+def bezier_curve_fit(points, num_points=100):
+    tck, _ = splprep(points.T, s=0)
+    x_new, y_new = splev(np.linspace(0, 1, num_points), tck, der=0)
+    return np.vstack((x_new, y_new)).T
+```
+
+### **Sample Execution**
+
+```python
+# Load and process CSV data
+colours = ['r', 'g', 'b', 'y']
+path_XYs = read_csv('/content/isolated.csv')
+plot(path_XYs, colours)
+
+# Regularize and plot shapes
+regularized_path_XYs = [regularize_shape(shape) for path in path_XYs for shape in path]
+plot(regularized_path_XYs, colours)
+```
+
+This compact code reads shape data from a CSV, regularizes it into circles or Bezier curves, and then plots both the original and regularized shapes using Matplotlib.
 ## Running the Project
 
 1. **Prepare Your Dataset:** Ensure your dataset is in CSV format, with each row representing a point in a shape (X, Y coordinates).
