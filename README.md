@@ -13,6 +13,12 @@ CURVETOPIA processes and analyzes 2D shapes represented as polylines. The main f
 
 ## Output
 
+![image](https://github.com/user-attachments/assets/5b528879-bd9f-4c2e-a1f4-252696d9dd22)
+
+![image](https://github.com/user-attachments/assets/71164a12-546e-4e2a-8ca1-f8c2886c0b12)
+
+![image](https://github.com/user-attachments/assets/fd3768e5-4554-4d4e-8c5b-ae77fbd6d09b)
+
 
 ## Directory Structure
 
@@ -117,5 +123,10 @@ To set up the project environment, follow these steps:
 
 ## Contributors
 
+[<img src="https://github.com/{{ Ebullioscopic }}.png" width="60px;"/><br /><sub><ahref="https://github.com/{{ Ebullioscopic }}">{{ Ebullioscopic }}</a></sub>](https://github.com/{{ Ebullioscopic }}/{{ Adobe-GFG-Gensolve-Curvetopia }}
+
+[<img src="https://github.com/{{ A-Akhil }}.png" width="60px;"/><br /><sub><ahref="https://github.com/{{ A-Akhil }}">{{ A-Akhil }}</a></sub>](https://github.com/{{ Ebullioscopic }}/{{ Adobe-GFG-Gensolve-Curvetopia }}
+
 [Hariharan Mudaliar](https://github.com/Ebullioscopic)
+
 [A Akhil](https://github.com/A-Akhil)
